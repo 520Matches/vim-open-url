@@ -59,9 +59,9 @@ if g:open_url_default_mappings
     xmap gG <Plug>(open-url-search-google)
   endif
   if !hasmapto('<Plug>(open-url-search-bing )', 'n')
-    nmap gG <Plug>(open-url-search-bing)
+    nmap gS <Plug>(open-url-search-bing)
   endif
   if !hasmapto('<Plug>(open-url-search-bing)', 'x')
-    xmap gG <Plug>(open-url-search-bing)
+    xmap gS <Plug>(open-url-search-bing)
   endif
 endif
