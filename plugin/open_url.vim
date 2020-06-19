@@ -30,6 +30,8 @@ nnoremap <Plug>(open-url-search-google) :OpenSearchURL google <cword><CR>
 xnoremap <Plug>(open-url-search-google) :<C-U>OpenSearchURL google <C-R>=open_url#get_selection()<CR><CR>
 nnoremap <Plug>(open-url-search-wikipedia) :OpenSearchURL wikipedia <cword><CR>
 xnoremap <Plug>(open-url-search-wikipedia) :<C-U>OpenSearchURL wikipedia <C-R>=open_url#get_selection()<CR><CR>
+nnoremap <Plug>(open-url-search-bing) :OpenSearchURL bing <cword><CR>
+xnoremap <Plug>(open-url-search-bing) :<C-U>OpenSearchURL bing <C-R>=open_url#get_selection()<CR><CR>
 
 if g:open_url_default_mappings
   if !hasmapto('<Plug>(open-url-browser)', 'n')
@@ -55,5 +57,11 @@ if g:open_url_default_mappings
   endif
   if !hasmapto('<Plug>(open-url-search-google)', 'x')
     xmap gG <Plug>(open-url-search-google)
+  endif
+  if !hasmapto('<Plug>(open-url-search-bing )', 'n')
+    nmap gG <Plug>(open-url-search-bing)
+  endif
+  if !hasmapto('<Plug>(open-url-search-bing)', 'x')
+    xmap gG <Plug>(open-url-search-bing)
   endif
 endif

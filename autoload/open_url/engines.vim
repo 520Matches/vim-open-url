@@ -1,6 +1,7 @@
-let g:open_url#engines#default = 'duckduckgo'
+let g:open_url#engines#default = 'bing'
 
 let s:engines = {
+      \ 'bing': 'https://cn.bing.com/search?q=%s',
       \ 'google': 'https://www.google.com/search?q=%s',
       \ 'duckduckgo': 'https://duckduckgo.com/?q=%s',
       \ 'wikipedia': 'https://en.wikipedia.org/wiki/Special:Search?search=%s',
